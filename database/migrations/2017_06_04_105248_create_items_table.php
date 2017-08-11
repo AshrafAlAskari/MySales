@@ -21,7 +21,6 @@ class CreateItemsTable extends Migration
             $table->text('item_desc');
             $table->integer('source_price');
             $table->integer('selling_price');
-            $table->integer('shipped_qty')->nullable();
             $table->integer('rem_qty');
         });
     }
