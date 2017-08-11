@@ -25,7 +25,7 @@ var token = '{{ Session::token() }}';
 <script src="{{ URL::to('js/jquery.js') }}"></script>
 <script src="{{ URL::to('js/bootstrap.js') }}"></script>
 <script src="{{ URL::to('js/bootstrap-datepicker.js') }}"></script>
-<script src="{{ URL::to('js/datePicker.js') }}"></script>
+<script src="{{ URL::to('js/main.js') }}"></script>
 @yield('js')
 </body>
 </html>
