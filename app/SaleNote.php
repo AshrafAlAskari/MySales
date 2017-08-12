@@ -8,11 +8,11 @@ class SaleNote extends Model
 {
    public function sales()
    {
-      return $this->hasMany('App\Sale');
+      return $this->hasMany(Sale::Class);
    }
 
    public function customer()
    {
-      return $this->belongsTo('App\Customer');
+      return $this->belongsTo(Customer::Class);
    }
 }

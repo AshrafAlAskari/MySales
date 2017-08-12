@@ -67,9 +67,9 @@ class SaleController extends Controller
       $validator = Validator::make($request->all(),[
          'item_type' => 'required',
          'item_id' => 'required',
-         'qty' => 'required|max:20',
-         'selling_price' => 'required|max:20',
-         'total_price' => 'required|max:20'
+         'qty' => 'required|max:100000',
+         'selling_price' => 'required|max:1000000',
+         'total_price' => 'required|max:10000000'
       ]);
       if($validator->fails())
       return back()->WithErrors($validator->errors()->all())->withInput();
